@@ -1,7 +1,11 @@
-# Connection parameters to PostgreSQL database
+# Connection parameters to Mongo cluter
 connection:
-  username: "{{DP3_APP}}"
-  password: "{{DP3_APP}}"
-  address: "127.0.0.1"
-  port: 5432
-  db_name: "{{DP3_APP}}"
+  mode: "replica" 
+  replica_set: feta_ts 
+  hosts:
+    - address: "mongo1.liberouter.org" 
+      port: 27002
+    - address: "mongo2.liberouter.org" 
+      port: 27002
+    - address: "mongo3.liberouter.org" 
+      port: 27002
