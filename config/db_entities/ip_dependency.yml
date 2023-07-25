@@ -3,14 +3,15 @@ entity:
   name: IP dependency
   key_data_type: string
   auto_create_record: true
+  snapshot: true
 attribs:
-  flow_time_serie_dep:
+  flow_time_series_dep:
     name: FTS
     description: Flow Time Series
     type: timeseries
     timeseries_type: irregular_intervals
     timeseries_params:
-      max_age: 1y
+      max_age: 365d
     series:
       packets:
         data_type: int
@@ -25,7 +26,7 @@ attribs:
     history_params:
       pre_validity: 24h
       post_validity: 24h
-      max_age: 1y
+      max_age: 365d
       aggregate: true
 
     

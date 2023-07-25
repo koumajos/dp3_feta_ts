@@ -1,3 +1,8 @@
+# MongoDB Connection configuration
+db_name: "dp3_feta_ts"
+username: "feta_ts"
+password: "feta_ts"
+
 # Connection parameters to Mongo cluter
 connection:
   mode: "replica" 
